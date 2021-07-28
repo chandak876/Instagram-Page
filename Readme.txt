@@ -1,1 +1,0 @@
-Project designing sample instagram page using HTML CSS
