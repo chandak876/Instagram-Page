@@ -6,11 +6,14 @@
 
     /*color codes*/
     --instagram-blue: #0595F6;
+    --facebook-blue: #395185;
     --light-blue: #0F4173;
+    --very-light-blue: #B3DFFC;
     --dark-blue: #00376B;
     --light-grey: #FAFAFA;
     --dark-grey: #A1A1A1;
     --mild-grey: #DBDBDB;
+    --mildish-grey: #8E8E8E
 }
 
 html {
@@ -178,6 +181,7 @@ section {
     display: flex;
     margin-right: 4.8rem;
     padding-top: 1.60rem;
+    cursor: pointer;
 }
 
 .profile-tabbar-tab:last-child{
@@ -253,26 +257,162 @@ section {
     margin-right: 0.2rem;
 }
 
-/*Style changes for different Screen resolutions */
-@media only screen and (max-width: 97.5rem) {
-    .posts-post-image{
-        width: 25rem;
-        height: 25rem;
-    }
+/* Pop-Up Box Styling*/
+.login-popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scale(0);
+    transition: 50ms ease-in-out;
+    background: rgba(0,0,0,0.65);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-@media only screen and (max-width: 85.1rem) {
-    .posts-post-image{
-        width: 22rem;
-        height: 22rem;
-    }
+.login-popup.active{
+    transform: scale(1);
+}
 
+.login-popup-header-text{
+    color: white;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.38rem;
+    font-weight: bold;
+}
+
+.login{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.1rem solid var(--mild-grey);
+    padding: 2rem 3rem;
+    width: 33rem;
+    border-radius: 1rem;
+}
+
+.login-header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.login-popup-close{
+    background: white;
+    border: none;
+    font-size: 3.3rem;
+    font-weight: lighter;
+    color: gray;
+    margin-left: 3rem;
+    cursor: pointer;
+}
+
+.login-logo{
+    margin: 0.8rem 2.4rem 3rem 5rem;
+    height: 6rem;
+    width: 17rem;
+}
+
+.login-input{
+    background: var(--light-grey);
+    margin-bottom: 0.8rem;
+    width: 26rem;
+    height: 3rem;
+    padding: 0.2rem 0.6rem;
+    border: 0.1rem solid var(--mild-grey);
+    border-radius: 0.1rem;
+}
+
+.login-input::placeholder{
+    color: var(--dark-grey);
+}
+
+.login-button{
+    color: white;
+    font-size: 1.5rem;
+    background: var(--very-light-blue);
+    padding: 0.7rem 11.63rem;
+    margin-top: 0.8rem;
+    border-radius: 0.4rem;
+}
+
+.login-seperator{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.58rem;
+    width: 27rem;
+}
+
+.login-seperator-line{
+    border-top: 0.1rem solid var(--mild-grey);
+    width: 10.63rem;
+    margin-top: 1.98rem;
+}
+
+.login-seperator-text{
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: var(--mildish-grey);
+    margin-top: 1.28rem;
+}
+
+.login-facebook{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+
+.login-facebook-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+    margin-top: 1.68rem;
+}
+
+.login-facebook-text{
+    font-size: 1.5rem;
+    color: var(--facebook-blue);
+    font-weight: 540;
+    margin-top: 1.42rem;
+}
+
+.login-forgot-password{
+    font-size: 1.25rem;
+    color: var(--facebook-blue);
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.login-signup{
+    border-top: 0.1rem solid var(--mild-grey);
+    border-bottom: 0.1rem solid var(--mild-grey);
+    padding: 1rem 3rem;
+}
+
+.login-signup-text{
+    margin: 0.52rem 0;
+    font-size: 1.4rem;
+}
+
+.login-signup-button{
+    color: var(--instagram-blue);
+    font-weight: bold;
+}
+
+/*Style changes for different Screen resolutions */
+@media only screen and (max-width: 85.1rem) {
     .profile-picture{
         margin-right: 4rem;
     }
 }
 
-@media only screen and (max-width: 75rem) {
+@media only screen and (max-width: 50rem) {
     .posts-post-image{
         width: 20rem;
         height: 20rem;
@@ -283,27 +423,9 @@ section {
         width: 7rem;
         margin-right: 2.5rem;
     }
-}
-
-@media only screen and (max-width: 65rem) {
-    .posts-post-image{
-        width: 18rem;
-        height: 18rem;
-    }
-
-    .post{
-        margin: 0 0;
-    }
 
     .profile-content{
         font-size: 1.3rem;
-    }
-}
-
-@media only screen and (max-width: 59rem) {
-    .posts-post-image{
-        width: 17rem;
-        height: 17rem;
     }
 }
 

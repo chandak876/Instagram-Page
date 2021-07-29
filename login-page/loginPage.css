@@ -1,0 +1,160 @@
+/*General Styling*/
+:root{
+
+    /*Int Variables*/
+    --login-container-width: 29rem;
+
+    /*color codes*/
+    --instagram-blue: #0595F6;
+    --facebook-blue: #395185;
+    --very-light-blue: #B3DFFC;
+    --light-grey: #FAFAFA;
+    --dark-grey: #A1A1A1;
+    --mild-grey: #DBDBDB;
+    --mildish-grey: #8E8E8E;
+
+}
+
+html{
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: var(--light-grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*Component based styling*/
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border: 0.1rem solid var(--mild-grey);
+    padding: 2rem 3rem;
+    width: var(--login-container-width);
+    margin-bottom: 1rem;
+}
+
+.login-logo{
+    margin-bottom: 3rem;
+    height: 6rem;
+    width: 17rem;
+    margin-top: 0.8rem;
+}
+
+.login-input{
+    background: var(--light-grey);
+    margin-bottom: 0.8rem;
+    width: 26rem;
+    height: 3rem;
+    padding: 0.2rem 0.6rem;
+    border: 0.1rem solid var(--mild-grey);
+    border-radius: 0.1rem;
+}
+
+.login-input::placeholder{
+    color: var(--dark-grey);
+}
+
+.login-button{
+    color: white;
+    font-size: 1.5rem;
+    background: var(--very-light-blue);
+    padding: 0.7rem 11.63rem;
+    margin-top: 0.8rem;
+    border-radius: 0.4rem;
+}
+
+.login-seperator{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.58rem;
+    width: 27rem;
+}
+
+.login-seperator-line{
+    border-top: 0.1rem solid var(--mild-grey);
+    width: 10.63rem;
+    margin-top: 1.98rem;
+}
+
+.login-seperator-text{
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: var(--mildish-grey);
+    margin-top: 1.28rem;
+}
+
+.login-facebook{
+    display: flex;
+    flex-direction: row;
+}
+
+.login-facebook-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+    margin-top: 1.68rem;
+}
+
+.login-facebook-text{
+    font-size: 1.5rem;
+    color: var(--facebook-blue);
+    font-weight: 540;
+    margin-top: 1.60rem;
+}
+
+.login-forgot-password{
+    font-size: 1.25rem;
+    color: var(--facebook-blue);
+    margin-top: 1.82rem;
+}
+
+.signup{
+    background: white;
+    border: 0.1rem solid var(--mild-grey);
+    padding: 2rem 3rem;
+    width: var(--login-container-width);
+}
+
+.signup-text{
+    font-size: 1.4rem;
+}
+
+.signup-button{
+    color: var(--instagram-blue);
+    font-weight: bold;
+}
+
+.download-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.download-stores{
+    display: flex;
+    justify-content: space-between;
+    width: var(--login-container-width);
+}
+
+.download-section-text{
+    font-size: 1.43rem;
+    margin-bottom: 2rem;
+}
+
+.download-stores-store{
+    width: 14rem;
+    height: 4rem;
+}
