@@ -6,7 +6,8 @@
     <meta name = "viewport" content="with=device-width, initial-scale=1.0">
     <title>Elon Musk</title>
 
-    <link rel = "stylesheet" href="style.css">
+    <link rel = "stylesheet" href="./styles/style.css">
+    <script defer type="module" src="./src/index.js"></script>
 </head>
 
 <body>
@@ -14,7 +15,7 @@
 <!--header-section-->
     <section class="header">
         <nav class="header-container">
-            <img class="header-logo" width="105" height="34" src="./images/instagram-Logo.jpg">
+            <img class="header-logo" width="105" height="34" src="./Images/Instagram-Logo.jpg">
 
             <input
                 type="text"
@@ -23,20 +24,20 @@
             />
 
             <ul class="header-actions">
-                <li><a class ="header-actions-login" href = "#">Log In</a></li>
-                <li><a class ="header-actions-signup" href = "#">Sign Up</a></li>
+                <li><a class ="header-actions-login" href = "./login-page/loginPage.html">Log In</a></li>
+                <li><a class ="header-actions-signup" href = "./signup-page/signUpPage.html">Sign Up</a></li>
             </ul>
         </nav>
     </section>
 
 <!--Profile Details Section-->
     <section class="profile">
-        <img class="profile-picture" src="./images/profile-pic.jpeg">
+        <img class="profile-picture" src="./Images/profile-pic.jpeg">
 
         <div class="profile-content">
             <div class="inline">
                 <p class="profile-content-username">elonrmuskk</p>
-                <a class="profile-content-follow">Follow</a>
+                <a class="profile-content-follow" id="profile-content-follow-button">Follow</a>
             </div>
 
             <div class="profile-content-stats">
@@ -58,24 +59,25 @@
 <!--Section to switch between posts and tagged posts-->
     <section class="profile-tabbar">
         <div class = "profile-tabbar-tab profile-tabbar-tab-selected">
-            <img class="profile-tabbar-tab-icon" src="./images/grid.png">
+            <img class="profile-tabbar-tab-icon" src="./Images/grid.png">
             <h4 class="profile-tabbar-tab-text profile-tabbar-tab-text-selected">POSTS</h4>
         </div>
-        <div class = "profile-tabbar-tab">
-            <img class="profile-tabbar-tab-icon" src="./images/tagged.png">
+        <div class = "profile-tabbar-tab" data-login-popup-open-target="#login-popup">
+            <img class="profile-tabbar-tab-icon" src="./Images/tagged.png">
             <h4 class="profile-tabbar-tab-text">TAGGED</h4>
         </div>
     </section>
 
-<!--Section displaying the uploaded images by the user-->
+<!--Section displaying the uploaded Images by the user-->
     <section class="posts">
+
 <!--        Post 1-->
         <div class="post">
             <img class="posts-post-image" src="Images/Post1.png">
             <div class="posts-post-info">
-                <img class="posts-post-info-icon"  width="20" height="20" src="./images/love_icon.png">
+                <img class="posts-post-info-icon"  width="20" height="20" src="./Images/love_icon.png">
                 <p class="posts-post-info-likes">177k</p>
-                <img class="posts-post-info-icon"  width="20" height="20" src="./images/comment_icon.png">
+                <img class="posts-post-info-icon"  width="20" height="20" src="./Images/comment_icon.png">
                 <p>3060</p>
             </div>
         </div>
@@ -84,9 +86,9 @@
         <div class="post">
             <img class="posts-post-image" src="Images/Post2.png">
             <div class="posts-post-info">
-                <img class="posts-post-info-icon"  width="20" height="20" src="./images/love_icon.png">
+                <img class="posts-post-info-icon"  width="20" height="20" src="./Images/love_icon.png">
                 <p class="posts-post-info-likes">177k</p>
-                <img class="posts-post-info-icon"  width="20" height="20" src="./images/comment_icon.png">
+                <img class="posts-post-info-icon"  width="20" height="20" src="./Images/comment_icon.png">
                 <p>3060</p>
             </div>
         </div>
@@ -95,9 +97,9 @@
         <div class="post">
             <img class="posts-post-image" src="Images/Post3.png">
             <div class="posts-post-info">
-                <img class="posts-post-info-icon"  width="20" height="20" src="./images/love_icon.png">
+                <img class="posts-post-info-icon"  width="20" height="20" src="./Images/love_icon.png">
                 <p class="posts-post-info-likes">177k</p>
-                <img class="posts-post-info-icon"  width="20" height="20" src="./images/comment_icon.png">
+                <img class="posts-post-info-icon"  width="20" height="20" src="./Images/comment_icon.png">
                 <p>3060</p>
             </div>
         </div>
@@ -106,9 +108,9 @@
         <div class="post">
             <img class="posts-post-image" src="Images/Post4.png">
             <div class="posts-post-info">
-                <img class="posts-post-info-icon"  width="20" height="20" src="./images/love_icon.png">
+                <img class="posts-post-info-icon"  width="20" height="20" src="./Images/love_icon.png">
                 <p class="posts-post-info-likes">177k</p>
-                <img class="posts-post-info-icon"  width="20" height="20" src="./images/comment_icon.png">
+                <img class="posts-post-info-icon"  width="20" height="20" src="./Images/comment_icon.png">
                 <p>3060</p>
             </div>
         </div>
@@ -117,9 +119,9 @@
         <div class="post">
             <img class="posts-post-image" src="Images/Post5.png">
             <div class="posts-post-info">
-                <img class="posts-post-info-icon"  width="20" height="20" src="./images/love_icon.png">
+                <img class="posts-post-info-icon"  width="20" height="20" src="./Images/love_icon.png">
                 <p class="posts-post-info-likes">177k</p>
-                <img class="posts-post-info-icon"  width="20" height="20" src="./images/comment_icon.png">
+                <img class="posts-post-info-icon"  width="20" height="20" src="./Images/comment_icon.png">
                 <p>3060</p>
             </div>
         </div>
@@ -128,13 +130,55 @@
         <div class="post">
             <img class="posts-post-image" src="Images/Post6.png">
             <div class="posts-post-info">
-                <img class="posts-post-info-icon"  width="20" height="20" src="./images/love_icon.png">
+                <img class="posts-post-info-icon"  width="20" height="20" src="./Images/love_icon.png">
                 <p class="posts-post-info-likes">177k</p>
-                <img class="posts-post-info-icon"  width="20" height="20" src="./images/comment_icon.png">
+                <img class="posts-post-info-icon"  width="20" height="20" src="./Images/comment_icon.png">
                 <p>3060</p>
             </div>
         </div>
+    </section>
 
+<!--Login Popup box section-->
+    <section class="login-popup" id="login-popup">
+        <p class="login-popup-header-text">Log in to connect with your world on Instagram</p>
+
+        <div class="login" id="login">
+            <div class="login-header">
+                <img class="login-logo" width="105" height="34" src="./Images/Instagram-Logo.jpg">
+                <button data-login-popup-close-target="#login-popup" class="login-popup-close" >&times;</button>
+            </div>
+
+            <input
+                    type="text"
+                    placeholder="Phone number, username, or email"
+                    class="login-input"
+            />
+
+            <input
+                    type="text"
+                    placeholder="Password"
+                    class="login-input"
+            />
+
+            <a href="#" class="login-button">Log In</a>
+
+            <div class="login-seperator">
+                <p class="login-seperator-line"></p>
+                <p class="login-seperator-text">OR</p>
+                <p class="login-seperator-line"></p>
+            </div>
+
+            <div class="login-facebook">
+                <img class="login-facebook-icon" src="./Images/facebook_icon.png">
+                <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=124024574287414&kid_directed_site=0&app_id=124024574287414&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fclient_id%3D124024574287414%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignup%252F%26state%3D%257B%2522fbLoginKey%2522%253A%25221b7i6m013rl54a1ay9cub1gxy3yfvry17w8uo56jywson81e8b6p0%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%2522%257D%26scope%3Demail%26response_type%3Dcode%252Cgranted_scopes%26locale%3Den_US%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Dca5d47d8-9632-4b35-9c4c-0ad7824afb76%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fsignup%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522fbLoginKey%2522%253A%25221b7i6m013rl54a1ay9cub1gxy3yfvry17w8uo56jywson81e8b6p0%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%2522%257D%23_%3D_&display=page&locale=hi_IN&pl_dbl=0" class="login-facebook-text">Log in with Facebook</a>
+            </div>
+
+            <a href="https://www.instagram.com/accounts/password/reset/" class="login-forgot-password">Forgot password?</a>
+
+            <section class="login-signup">
+                <center><p class="login-signup-text">Don't have an account? <a href="./signup-page/signUpPage.html" class="login-signup-button">Sign up</a></p></center>
+            </section>
+        </div>
     </section>
 </body>
 </html>

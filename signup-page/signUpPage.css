@@ -1,0 +1,156 @@
+/*General Styling*/
+:root{
+
+    /*Int Variables*/
+    --signup-container-width: 29rem;
+
+    /*color codes*/
+    --instagram-blue: #0595F6;
+    --facebook-blue: #395185;
+    --very-light-blue: #B3DFFC;
+    --light-grey: #FAFAFA;
+    --dark-grey: #A1A1A1;
+    --mild-grey: #DBDBDB;
+    --mildish-grey: #8E8E8E
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: var(--light-grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*Component based Styling*/
+.signup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border: 0.1rem solid var(--mild-grey);
+    padding: 2rem 3rem;
+    width: var(--signup-container-width);
+    margin-bottom: 1rem;
+}
+
+.signup-logo{
+    height: 6rem;
+    width: 17rem;
+    margin-top: 0.8rem;
+}
+
+.signup-description{
+    margin-top: 0.91rem;
+    font-size: 1.72rem;
+    text-align: center;
+    color: var(--mildish-grey);
+    font-weight: 540;
+    margin-bottom: 0;
+}
+
+.signup-facebook-icon{
+    margin: 1.9rem auto auto auto;
+    width: 25rem;
+    height: 3.4rem;
+    border-radius: 0.3rem;
+}
+
+.signup-seperator{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.58rem;
+    width: 27rem;
+}
+
+.signup-seperator-line{
+    border-top: 0.1rem solid var(--mild-grey);
+    width: 10.63rem;
+    margin-top: 1.98rem;
+}
+
+.signup-seperator-text{
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: var(--mildish-grey);
+    margin-top: 1.28rem;
+}
+
+.signup-input{
+    background: var(--light-grey);
+    margin-bottom: 0.8rem;
+    width: 26rem;
+    height: 3rem;
+    padding: 0.2rem 0.6rem;
+    border: 0.1rem solid var(--mild-grey);
+    border-radius: 0.1rem;
+}
+
+.signup-input::placeholder{
+    color: var(--dark-grey);
+}
+
+.signup-button{
+    color: white;
+    font-size: 1.5rem;
+    background: var(--very-light-blue);
+    padding: 0.7rem 11.63rem;
+    margin-top: 0.8rem;
+    border-radius: 0.4rem;
+}
+
+.signup-terms-and-conditions{
+    font-size: 1.25rem;
+    text-align: center;
+    color: var(--mildish-grey);
+    margin-top: 1.5rem;
+}
+
+.login{
+    background: white;
+    border: 0.1rem solid var(--mild-grey);
+    padding: 1rem 3rem;
+    width: var(--signup-container-width);
+}
+
+.login-text{
+    font-size: 1.4rem;
+}
+
+.login-button{
+    color: var(--instagram-blue);
+    font-weight: bold;
+}
+
+.download-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.download-section-text{
+    font-size: 1.43rem;
+    margin-bottom: 2rem;
+}
+
+.download-stores{
+    display: flex;
+    justify-content: space-between;
+    width: var(--signup-container-width);
+}
+
+.download-stores-store{
+    width: 14rem;
+    height: 4rem;
+}
