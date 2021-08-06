@@ -2,9 +2,10 @@
 import handleFollowButtonClick from '../handlers/handleFollowButtonClick.js';
 import handleOpenLoginPopup from '../handlers/handleOpenLoginPopup.js'
 import handleCloseLoginPopup from '../handlers/handleCloseLoginPopup.js'
+import getDisplayPosts from '../helpers/getDisplayPosts.js'
 
 // Helpers
-import {getLoginPopupOpenTargets, getCloseLoginPopupOpenTargets, getFollowButton} from './general.js'
+import {getLoginPopupOpenTargets, getCloseLoginPopupOpenTargets, getFollowButton, getPostSection} from './general.js'
 
 const attachFollowButtonClickListener = () => {
     const followButton = getFollowButton();
@@ -37,10 +38,13 @@ const attachCloseLoginPopupListener = closeLoginPopupTarget => {
 }
 const attachCloseLoginPopupListeners = () => getCloseLoginPopupOpenTargets().forEach(attachCloseLoginPopupListener);
 
+const getAllPosts = () => getPostSection().appendChild(getDisplayPosts());
+
 const initializeEventListeners = () => {
     attachFollowButtonClickListener();
     attachOpenLoginPopupListeners();
     attachCloseLoginPopupListeners();
+    getAllPosts();
 }
 
 export default initializeEventListeners;
